@@ -1,0 +1,124 @@
+
+<!DOCTYPE html> 
+<html lang="en"> 
+<head> 
+    <meta charset="UTF-8"> 
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <title>Contact-us page</title> 
+    <link rel="icon" type="image/x-icon" href="images/logo.jpeg"> 
+    <style>
+       
+        body {
+            font-family: Arial, sans-serif;
+            background-image: url('https://img.freepik.com/premium-photo/wooden-block-with-symbol-telephone-email-address-website-page-contact-us-e-mail-marketing-concept-3d-rendering_20693-752.jpg');
+            background-size: cover;
+            background-color: #f4f4f4;
+            margin: 0;
+        }
+
+        header {
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        header a {
+            color: #808080;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+
+        main {
+            margin: 20px;
+            background-color: rgba(255, 255, 255, 0.9);
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+        }
+
+        form h1 {
+            text-align: center;
+            color: #333;
+        }
+
+        label {
+            display: block;
+            margin: 10px 0 5px;
+            color: #555;
+        }
+
+        input {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+
+        input[type="submit"] {
+            background-color: #333;
+            color: white;
+            cursor: pointer;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #555;
+        }
+
+        h3,
+        hr {
+            margin-top: 20px;
+            margin-bottom: 20px;
+            color: #555;
+        }
+
+        a {
+            color: #333;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head> 
+<body> 
+    <header> 
+        <center><img src="images/bloomm.jpeg" height="100" width="300"><hr> 
+        <a href="home.html">Home</a> 
+        <a href="about.html">About us</a> 
+        <a href="payments.html">Payment</a> 
+        <a href="contact.html">Contact us</a> 
+        <a href="doctors.html">Doctors</a> 
+        <a href="patient-records.html">Patient Records</a> 
+        <hr> 
+        </center> 
+    </header> 
+    <main> 
+        <form id="contactForm" action="confirmation.html" method="get"> 
+            <h1>Contact Us</h1> 
+            <label for="fname">First name:</label><br> 
+            <input type="text" id="fname" name="fname" required><br> 
+            <label for="lname">Last name:</label><br> 
+            <input type="text" id="lname" name="lname" required><br> 
+            <label for="contactNumber">Contact Number:</label><br> 
+            <input type="text" id="contactNumber" name="contactNumber" required><br> 
+            <label for="email">Email ID:</label><br> 
+            <input type="email" id="email" name="email" required><br> 
+            <label for="query">Query:</label><br> 
+            <input type="text" id="query" name="query" required><br><br> 
+            <input type="submit" value="Submit"> 
+        </form> 
+        <h3>Emergency: +914466667788</h3><hr> 
+        <h3>Contact Us: +91 9384681770</h3><hr> 
+        <h3>Send us a Mail: info@bloomcare.com</h3><hr> 
+        <a href="book.html">Request an Appointment online</a><hr> 
+    </main> 
+
+    
+       
+    
+</body> 
+</html> 

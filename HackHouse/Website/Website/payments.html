@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Payments page</title>
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
+    <link rel="icon" type="image/x-icon" href="images/logo.jpeg">
+    <link rel="stylesheet" href="payments.css">
+</head>
+<body>
+
+<header>
+    <img src="images/bloomm.jpeg" width="300" alt="Bloom Care Hospitals">
+    <div class="navbar">
+        <ul>
+            <li><a href="home.html" class="navbar"><i class="fa fa-home"></i> Home</a></li>
+            <li><a href="about.html" class="navbar"><i class="fa fa-info-circle"></i> About us</a></li>
+            <li><a href="payments.html" class="navbar"><i class="fa fa-credit-card"></i> Payment</a></li>
+            <li><a href="contact.html" class="navbar"><i class="fa fa-envelope"></i> Contact us</a></li>
+            <li><a href="doctors.html" class="navbar"><i class="fa fa-user-md"></i> Doctors</a></li>
+        </ul>
+    </div>
+</header>
+
+<h3>For the convenience of our patients, BLOOMCARE Hospitals has simplified the entire payment process:</h3>
+<h3>Original Price: <del>$500.00</del></h3>
+<h3>Discounted Price: $300.00</h3>
+<ul>
+    <li><b>If you prefer to make payments in person, our friendly staff at the hospital's billing desk will be happy to assist you.</b></li>
+    <li><b>Secure payment gateway</b></li>
+    <li><b>Credit/Debit Card</b></li>
+    <img src="https://pay.apollohospitals.com/images/payment/creditcard.svg" height="30">
+    <li><b>Net Banking</b></li>
+    <img src="https://pay.apollohospitals.com/images/payment/netbank.svg" height="30"><br> &All the Major banks
+    <li><b>Wallets</b></li>
+    <img src="https://pay.apollohospitals.com/images/payment/wallets.svg" height="30">
+    <li><b>UPI</b></li>
+    <img src="https://pay.apollohospitals.com/images/payment/upi.svg" height="30">
+</ul>
+
+<div class="wrapper">
+    <h2>Payment form</h2>
+    <form action="" method="POST">
+        <div class="input_group">
+            <div class="input_box">
+                <input type="text" placeholder="Full Name" required class="name">
+                <i class="fa fa-user icon"></i>
+            </div>
+            <div class="input_box">
+                <input type="text" placeholder="Name on Card" required class="name">
+                <i class="fa fa-user icon"></i>
+            </div>
+        </div>
+        <div class="input_group">
+            <div class="input_box">
+                <input type="email" placeholder="Email Address" required class="name">
+                <i class="fa fa-envelope icon"></i>
+            </div>
+        </div>
+        <div class="input_box">
+            <input type="text" placeholder="Address" required class="name">
+            <i class="fa fa-map-marker icon"></i>
+        </div>
+        <div class="input_group">
+            <div class="input_box">
+                <input type="text" placeholder="City" required class="name">
+                <i class="fa fa-institution icon"></i>
+            </div>
+        </div>
+        <div class="input_group">
+            <div class="input_box">
+                <h4>Date of Birth</h4>
+                <input type="text" placeholder="DD" required class="dob">
+                <input type="text" placeholder="MM" required class="dob">
+                <input type="text" placeholder="YYYY" required class="dob">
+            </div>
+        </div>
+        <div class="input_group">
+            <div class="input_box">
+                <h4>Payment Details</h4>
+                <input type="radio" name="pay" class="radio" id="bc1" checked>
+                <label for="bc1"><span><i class="fa fa-cc-visa"></i>Credit Card</span></label>
+                <input type="radio" name="pay" class="radio" id="bc2">
+                <label for="bc2"><span><i class="fa fa-cc-paypal"></i>Paypal</span></label>
+            </div>
+        </div>
+        <div class="input_group">
+            <div class="input_box">
+                <input type="tel" class="name" placeholder="CardNumber 1111-2222-3333-4444">
+                <i class="fa fa-credit-card icon"></i>
+            </div>
+        </div>
+        <div class="input_box">
+            <input type="tel" class="name" placeholder="Card CVV 632" required>
+            <i class="fa fa-user icon"></i>
+        </div>
+        <div class="input_group">
+            <div class="input_box">
+                <input type="number" class="name" placeholder="Exp Month" required>
+                <i class="fa fa-calendar icon"></i>
+            </div>
+        </div>
+        <div class="input_group">
+            <div class="input_box">
+                <input type="number" class="name" placeholder="Exp year" required>
+                <i class="fa fa-calendar-o icon"></i>
+            </div>
+        </div>
+        <div class="input_box">
+            <input type="number" class="name" placeholder="Enter Amount" required>
+            <i class="fa fa-money icon"></i>
+        </div>
+        <div class="input_group">
+            <div class="input_box">
+                <button type="submit">Pay Now</button>
+            </div>
+        </div>
+    </form>
+</div>
+
+</body>
+</html>

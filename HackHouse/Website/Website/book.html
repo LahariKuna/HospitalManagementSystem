@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style> 
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: url(images/top-view-stethoscope.jpg) no-repeat center fixed;
+            background-size: cover;
+        }
+        center {
+            margin-top: 50px;
+        }
+        header {
+            background-color: #f2f2f2;
+            padding: 5px;
+        }
+        header a {
+            text-decoration: none;
+            color: #333;
+            margin-right: 10px;
+        }
+        header a:hover {
+            color: #000;
+        }
+        h1 {
+            text-align: center;
+            color: black;
+            text-shadow: 2px 2px 4px skyblue;
+            margin-top: 20px;
+        }
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: #333;
+            text-align: center;
+            box-shadow: none;
+        }
+        li {
+            float: right;
+        }
+        li a {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+        li a:hover:not(.active) {
+            background-color: #f2aa4c;
+        }
+        .active {
+            background-color: royalblue;
+        }
+        h2, h4 {
+            text-align: center;
+        }
+        form {
+            width: 70%;
+            padding: 20px;
+            background-color: none;
+            border-radius: 10px;
+            animation: fadeIn 3s ease;
+            float: left; /* Move the form to the left */
+            margin-left: 150px;
+        }
+        label {
+            font-weight: bold;
+        }
+        input[type="text"],
+        input[type="date"],
+        input[type="tel"],
+        input[type="email"],
+        textarea {
+            width: 50%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-sizing: border-box;
+        }
+        input[type="radio"] {
+            margin-right: 5px;
+        }
+        button[type="submit"] {
+            background-color: #333;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            width: 50%; 
+            float: left;
+        }
+        button[type="submit"]:hover {
+            background-color: blue;
+        }
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+    </style>
+    <script>
+     
+    </script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Appointment</title>
+    <link rel="icon" type="image/x-icon" href="images/logo.jpeg">
+</head>
+<body >
+    <center>
+        <img src="images/bloomm.jpeg" width="300">
+        <h1>Appointment booking</h1>
+    <header>
+    <ul>
+        <li><a class="active" href="home.html">Home</a></li>
+        <li><a href="about.html">About us</a></li>
+        <li><a href="payments.html">Payment</a></li>
+        <li><a href="contact.html">Contact us</a></li>
+        <li><a href="doctors.html">Doctors</a></li>
+        <li><a href="patient-records.html">Patient Records</a></li>
+    </ul>    
+    
+     </header>
+    
+    </center>
+    <h2>Add patient details</h2>
+    <h4>Please provide details to continue to submit</h4>
+   
+       
+    <form action="payments.html">
+        
+    <label for="name">First Name:</label><br>
+    <input type="text" id="fname" name="name" required placeholder="Enter your first name here"><br>
+    <br>
+    <label for="name">Last Name:</label><br>
+    <input type="text" id="lname" name="name" required placeholder="Enter your last name here"><br>
+    <br>
+    <label for="start">Date of Birth:</label><br>
+    <input type="date" id="dob" name="trip-start" required><br>
+    <br>
+    <h>Gender</h>
+    <br>
+    <input type="radio" id="gender1" name="name" required>
+    <label for="gender">Male</label>
+    <input type="radio" id="gender2" name="name" required>
+    <label for="gender">Female</label><br>
+    <br>
+    <label for="phone">Enter your phone number:</label><br>
+    <input type="tel" id="phone" name="phone" pattern="[0-9]{3}[0-9]{4}[0-9]{3}" required placeholder="Enter your mobile number"><br>
+    <br>
+    <label for="name">Native place:</label><br>
+    <input type="text" id="place" name="place" required placeholder="Enter your place"><br>
+    <br>
+    <label for="email">Enter your email(optional):</label><br>
+    <input type="email" id="email" name="email" placeholder="Enter your Email"><br>
+    <br>
+    <label for="start">Date of appointment:</label><br>
+    <input type="date" id="doa" name="doa" required><br>
+    <br>
+    <label for="comment">Medical condition</label><br>
+    
+    <textarea id="text" id="Medical condition"></textarea><br>
+    <br>
+    <h>Have you visited before?</h>
+    <br>
+    <input type="radio" id="yes" name="name" required>
+    <label for="gender">Yes</label>
+    <input type="radio" id="no" name="name" required>
+    <label for="gender">No</label><br>
+    <br>
+    <button type="submit">Submit</button>
+    </form>
+</body>
+</html>

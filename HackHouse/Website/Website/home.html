@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/8993fc20df.js" crossorigin="anonymous"></script>
+    
+
+<script>
+function setCookie(cname,cvalue,exdays) {
+  const d = new Date();
+  d.setTime(d.getTime() + (exdays*24*60*60*1000));
+  let expires = "expires=" + d.toUTCString();
+  document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
+}
+
+function getCookie(cname) {
+  let name = cname + "=";
+  let decodedCookie = decodeURIComponent(document.cookie);
+  let ca = decodedCookie.split(';');
+  for(let i = 0; i < ca.length; i++) {
+    let c = ca[i];
+    while (c.charAt(0) == ' ') {
+      c = c.substring(1);
+    }
+    if (c.indexOf(name) == 0) {
+      return c.substring(name.length, c.length);
+    }
+  }
+  return "";
+}
+
+function checkCookie() {
+  let user = getCookie("username");
+  if (user != "") {
+    alert("Welcome again " + user);
+  } else {
+     user = prompt("Please enter your name:","");
+     if (user != "" && user != null) {
+       setCookie("username", user, 30);
+     }
+  }
+}
+</script>
+</head>
+
+<body onload="checkCookie()"></body>
+
+</html>
+
+    <title>Home page</title>
+    <link rel="icon" type="image/x-icon" href="images/logo.jpeg">
+    <link rel="stylesheet" href="home.css">
+ </head>
+<body class="fadeInAnimation">
+
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .contain {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            margin-top: -20px; 
+            padding: 20px;
+            animation: fadeIn 100s ease-in-out;
+             
+        }
+        @keyframes blinkOnce {
+            0% {
+                opacity: 0;
+            }
+            50% {
+                opacity: 1;
+            }
+            100% {
+                opacity: 0;
+            }
+        }
+            
+
+        h3,
+        h2,
+        button,
+        video {
+            margin-bottom: 20px;
+            transition: opacity 1s ease-in-out;
+            animation: blinkOnce 1s ease-in-out;
+        }
+        h3, h2, button, video:hover {
+            opacity: 1; 
+        }
+
+        table {
+            margin: 0 auto;
+            border-collapse: collapse;
+            width: 80%;
+            background-color: #f2f2f2;
+        }
+
+        th,
+        td {
+            padding: 12px;
+            text-align: center;
+            border: 1px solid #ddd;
+        }
+
+        th {
+            background-color: #f2f2f2;
+            color: #333;
+        }
+
+        tr:hover {
+            background-color: #f5f5f56d;
+        }
+        .button
+        {
+            position:relative;
+            background-color: black;
+            border:none;
+            font-size:28px;
+            color:#ffffff;
+            padding:20px;
+            width:500px;
+            text-align:center;
+            
+            text-decoration:none;
+           
+        }
+    </style>
+    
+    <header class="fadeInAnimation">
+        <img src="images/bloomm.jpeg" width="300">
+        
+        <h1>WELCOME TO BLOOMCARE HOSPITALS!!</h1>
+        <nav class="navbar">
+        <ul>
+       <li><a href="home.html">Home</a></li> 
+        <li><a href="about.html">About us</a></li>
+        <li><a href="payments.html">Payment</a></li>
+        <li><a href="contact.html">Contact us</a></li>
+        <li><a href="doctors.html">Doctors</a></li>
+        <li><a href="patient-records.html">Patient Records</a></li>
+    </ul>
+</nav>
+    </header>
+
+    <h1><i><q>Caring for you, because every life matters</i></q></h1>
+
+    <main  class="fadeInAnimation">
+        <aside>
+            <div>
+                <h1><i class="fas fa-seedling"></i> Welcome to Bloom Care Hospital - Nurturing Health, Blooming Lives!</h1>
+            </div>
+            
+            
+            
+            
+            <div>
+                <h2>Hospital Highlights:</h2>
+                <ul>
+                    <li><i class="fas fa-star"></i> Patient-Centered Care: Experience compassionate and personalized healthcare.</li>
+                    <li><i class="fas fa-trophy"></i> Award-Winning Services: Recognized for excellence in patient care and innovation.</li>
+                    <li><i class="fas fa-hospital-alt"></i> State-of-the-Art Facilities: Equipped with cutting-edge technology for optimal treatment.</li>
+                </ul>
+            </div>
+            
+            <div>
+                <h2>Patient Resources:</h2>
+                <ul>
+                    <li><i class="fas fa-book"></i>Health Tips & Resources: Access articles and resources for a healthier lifestyle.</li>
+                    <li><i class="fas fa-handshake"></i> Patient Testimonials: Read heartwarming stories from our satisfied patients.</li>
+                    <li><i class="fas fa-briefcase"></i> Insurance Information: Learn about accepted insurance plans and billing details.</li>
+                </ul>
+            </div>
+            
+           
+            <div>
+                <h2>Meet Our Experts:</h2>
+                <ul>
+                    <li><i class="fas fa-user-md"></i> Our Medical Team: Get to know our dedicated team of experienced healthcare professionals.</li>
+                    <li><i class="fas fa-brain"></i> Specialized Care: Learn about our specialists and their areas of expertise.</li>
+                </ul>
+            </div>
+            
+            
+            <div>
+                <h2>Language & Accessibility:</h2>
+                <ul>
+                    <li><i class="fas fa-globe"></i> Language Options</a>: Explore our website in multiple languages for your convenience.</li>
+                    <li><i class="fas fa-universal-access"></i> Accessibility Features: Ensuring our website is accessible to all.</li>
+                </ul>
+            </div>
+            
+            
+            <div>
+                <h2>Subscribe & Stay Informed:</h2>
+                <ul>
+                    <li><i class="fas fa-envelope"></i> Newsletter Signup: Receive health tips, event invitations, and exclusive offers.</li>
+                </ul>
+            </div>
+            
+        </aside>
+        <section>
+            <div class="container">
+                <div class="section">
+                    <h1>The Art of Healing: Bloom Care Hospital's Commitment to Your Well-Being</h1>
+                    <p>At Bloom Care Hospital, we prioritize your health and well-being. Our commitment is to provide exceptional healthcare services with compassion, expertise, and cutting-edge technology.</p>
+        
+                    <h2>Why Choose Bloom Care?</h2>
+                    <ul>
+                        <li class="heart" >Patient-Centric Approach: Our dedicated team of healthcare professionals is committed to delivering personalized care tailored to your unique needs. Your well-being is our top priority.</li>
+                        <li class="medical">State-of-the-Art Facilities: Experience healthcare at its finest with our modern facilities equipped with the latest advancements in medical technology. We ensure a comfortable and healing environment for our patients.</li>
+                        <li class="user-md">Expert Physicians: Trust in the hands of our experienced and skilled physicians who are leaders in their respective fields. Our medical team is committed to providing the highest quality care.</li>
+                        <li class="tasks">Comprehensive Services: From routine check-ups to specialized treatments, Bloom Care Hospital offers a wide range of medical services. We strive to be your one-stop destination for all your healthcare needs.</li>
+                    </ul>
+        
+                    <h2>Our Specialties:</h2>
+                    <ul class="specialties">
+                        <li>Cardiology: Ensuring a healthy heart for a healthier life.</li>
+                        <li>Orthopedics: Restoring mobility and enhancing quality of life.</li>
+                        <li>Maternity Care: Welcoming new beginnings with warmth and expertise.</li>
+                        <li>Emergency Services: Your health can't wait, and neither do we.</li>
+                    </ul>
+        
+                    <h2>Community-Centric Care:</h2>
+                    <ul class="community">
+                        <li> Bloom Care Hospital is not just a healthcare institution; we are an integral part of the community. Through health awareness programs, outreach initiatives, and community events, we aim to promote a healthier and happier community.</li>
+                    </ul>
+        
+                    <h2>Book Your Appointment Today:</h2>
+                    <p class="appointment">Take the first step towards a healthier future. Schedule an appointment with Bloom Care Hospital today. Your journey to optimal health begins here.</p>
+        
+                    <p>Your health, our priority. Bloom Care Hospital - Caring for You, Blooming with Wellness.</p>
+                </div>
+            </div>
+            <h2>Empowering Lives through Specialized Care</h2>
+            
+                        <p>Our team of expert physicians, specializing in cardiology, orthopedics, maternity care, and emergency services, is dedicated to delivering high-quality care tailored to your unique needs. We understand that each patient is different, and our personalized approach reflects our commitment to your well-being.</p>
+            
+                        <blockquote class="quote">
+                            "Health is a state of complete physical, mental, and social well-being, and not merely the absence of disease."
+                        </blockquote>
+                        <p class="author">- World Health Organization</p>    
+                    </div>
+                </div>
+            <div>
+                <h2>Innovation in Healthcare</h2>
+            
+                        <p>At Bloom Care, we embrace the latest advancements in medical technology to ensure precise diagnoses and effective treatments. Our state-of-the-art facilities are designed to provide a healing environment for our patients, fostering a sense of comfort and well-being.</p>
+            
+            
+        </section>
+
+            <h2>Empowering Lives through Specialized Care</h2>
+            <p>Our team of expert physicians, specializing in cardiology, orthopedics, maternity care, and emergency services, is dedicated to delivering high-quality care tailored to your unique needs. We understand that each patient is different, and our personalized approach reflects our commitment to your well-being.</p>
+
+            <blockquote class="quote">
+                "Health is a state of complete physical, mental, and social well-being, and not merely the absence of disease."
+            </blockquote>
+            <p class="author">- World Health Organization</p>
+        </section>
+
+        <div>
+        </main>
+
+        <h3>OPD Consultation Hours</h3>
+        <table border="3" style="margin: 0 auto;">
+            <tr align="center">
+                <th>Sunday</th>
+                <th>Monday</th>
+                <th>Tuesday</th>
+                <th>Wednesday</th>
+                <th>Thursday</th>
+                <th>Friday</th>
+                <th>Saturday</th>
+            </tr>
+            <tr align="center">
+                <td>10-2</td>
+                <td>9-5</td>
+                <td>9-5</td>
+                <td>9-5</td>
+                <td>9-5</td>
+                <td>9-5</td>
+                <td>10-2</td>
+            </tr>
+         </table>
+         <hr>
+         <div class="contain">
+         
+         <h3>Need a Doctor for Check-up?</h3>
+         <h2>Just Make An Appointment& You're Done!</h2>
+         <a href="book.html"><button class="button">Book Appointment</button></a>
+            
+               
+         <h3>Embark on a virtual journey through the heart of healing-explore our hospital through an immersive video tour</h3>
+         <video src="hospital.mp4" width="500px" controls autoplay> </video>
+        </div>
+
+        <hr>
+        <div class="contain">
+            
+            <div class="slideshow-container">
+                <div class="mySlides fade">
+                    <img src="images/slide1.jpg" style="width:500px">
+                </div>
+                <div class="mySlides fade">
+                    <img src="images/slide2.webp" style="width:500px">
+                </div>
+                <div class="mySlides fade">
+                    <img src="images/slide3.jpg"style="width:500px">
+                </div>
+            </div>
+            <br>
+
+            
+            <div style="text-align:center">
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+            </div>
+        </div>
+
+        <hr>
+        
+    </main>
+
+    <footer  class="fadeInAnimation">
+        <div class="follow">
+        <p><b>Follow us</b></p>
+        <div class="icon">
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-snapchat"></i>
+            <i class="fa-brands fa-youtube"></i>
+        </div>
+    </div>
+    <p><b>Install app from Google play or App Store</b></p>
+    <img src="images/gpas.png" alt="playstore"  height="40">
+    <p><b>Secured Payments Gateway</b></p>
+    <img src="images/payment gateway.jpg" alt="payment gateway" width="200" height="50">
+    
+         author: BloomCare<br>
+      &copy; copyright 2024.BLOOMCARE Hospitals Group.All rights Reserved
+      <br>
+      
+     <address>
+        Written by BloomCare.<br>
+        Visit us at:<br>
+        Bloomcare.com<br>
+        Palamaner<br>
+         </address>
+ </footer> 
+    <script>
+        
+        var slideIndex = 0;
+        showSlides();
+
+        function showSlides() {
+            var slides = document.getElementsByClassName("mySlides");
+            var dots = document.getElementsByClassName("dot");
+            for (var i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            slideIndex++;
+            if (slideIndex > slides.length) {
+                slideIndex = 1;
+            }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex - 1].style.display = "block";
+            dots[slideIndex - 1].className += " active";
+            setTimeout(showSlides, 2000); 
+        }
+    </script>
+</body>
+</html>

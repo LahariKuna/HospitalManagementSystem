@@ -1,0 +1,164 @@
+* {
+    box-sizing: border-box;
+}
+
+header {
+    background-color: #333333;
+    color:#ffffff;
+    text-align: center;
+    padding: 25px;
+}
+
+body {
+    margin: 0px;
+    background-image: url(https://tse1.mm.bing.net/th?id=OIP.YZATN5F5-EBxgsEHTNRWfwHaFj&pid=Api&P=0&h=180);
+}
+
+main {
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+h1 {
+    text-align: center;
+}
+
+.navbar ul {
+    list-style-type: none;
+    background-color:#6a6666;
+    padding: 0px;
+    margin: 0px;
+    overflow: hidden;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px;
+    display: block;
+    text-align: center;
+}
+
+.navbar a:hover {
+    background: color #454545;
+}
+
+.navbar li {
+    float: left;
+    border-right: 1px solid #bbb;
+}
+li:last-child{
+    border-right: none;
+}
+li a{
+    display:block;
+    padding:8px;
+}
+aside {
+    width: 20%;
+    float: left;
+    padding: 10px;
+}
+
+section {
+    width: 80%;
+    float: left;
+    padding: 10px;
+}
+
+
+footer {
+    display: block;
+    color:#ffffff;
+    clear: both;
+    background-color:#333333;
+    text-align: center;
+    padding: 25px;
+}
+
+@media screen and (max-width: 600px) {
+    aside,
+    section,
+    article {
+        width: 100%;
+    }
+}
+
+
+
+.site-footer {
+    background-color: hsl(0, 0%, 86%);
+    padding: 20px 0;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.follow,
+.app-install,
+.payments {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.icon i,
+.app-install img,
+.payments img {
+    margin: 0px;
+}
+
+hr {
+    border: 0;
+    border-top: 1px solid #ddd;
+}
+
+.copyright {
+    text-align: center;
+    font-size: 14px;
+}
+
+.address {
+    font-style: normal;
+}
+
+h1::first-letter {
+    font-size: 2em;
+    font-style: normal;
+}
+h2::first-letter {
+    font-size: 2em;
+    font-style: normal;
+}
+.center-section {
+    text-align: center;
+}
+
+.center-section video,
+.center-section table {
+    margin: 0 auto;
+}
+
+
+table {
+    width: 80%; 
+    border-collapse: collapse;
+    margin: 20px auto; 
+}
+
+th, td {
+    padding: 12px;
+    text-align: center;
+    border: 1px solid #ddd;
+}
+
+th {
+    background-color:black;
+    color: white;
+}
+
+tr:hover {
+    background-color: #f5f5f5; 
+}

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Form</title>
+    <link rel="icon" type="image/x-icon" href="images/logo.jpeg">
+    <link rel="stylesheet" type="text/css" href="login.css">
+</head>
+<script>
+
+    function validateForm() {
+        var username = document.forms["loginForm"]["user"].value;
+        var password = document.forms["loginForm"]["user_pass"].value;
+
+
+        if (username.length == 0 || username.length > 10) {
+            alert("Username must be between 1 and 10 characters");
+            return false;
+        }
+
+
+        if (password.length < 6 || password.length > 10 || /^[^a-zA-Z0-9]/.test(password)) {
+            alert("Password must be between 6 and 10 characters and should not start with special characters");
+            return false;
+        }
+
+        return true;
+    }
+
+</script>
+
+<body>
+    <div class="container">
+        <div class="login-form">
+            <h1><u>Login Here</u></h1>
+        </div>
+        <form action="home.html">
+            <table>
+                <tr>
+                    <td><i>Username:</i></td>
+                    <td>
+                        <input type="text" name="user" required>
+                    </td>
+                </tr>
+                <tr>
+                    <td><i>Password</i>:</td>
+                    <td>
+                        <input type="password" name="user_pass" required>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2" align="center">
+                        <input type="submit" name="submit" value="Login">
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2" align="center">
+                        <span>Not yet a member? </span><a href="register.html">Sign Up</a>
+                    </td>
+                </tr>
+            </table>
+        </form>
+    </div>
+
+
+</body>
+
+</html>

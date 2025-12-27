@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Specialized Doctors</title>
+    <link rel="icon" type="image/x-icon" href="images/logo.jpeg">
+    <style>
+        .doctor-info {
+            margin-bottom: 40px;
+            display: flex;
+            align-items: center;
+        }
+        .button {
+            background-color: #aa2304;
+            border: none;
+            color: white;
+            padding: 15px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 2px;
+            cursor: pointer;
+            }
+        a:link, a:visited {
+            background-color: rgb(255, 255, 255);
+            color: black;
+            border: 2px solid green;
+            padding: 10px 20px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+        }
+
+        a:hover, a:active {
+            background-color: green;
+            color: rgb(255, 255, 255);
+        }
+        img {
+            border-radius: 20px;
+            }
+        body {
+            background-color: rgb(173, 228, 230);
+            border: 10px solid skyblue;
+            border-radius: 12px;
+            padding: 5px;
+            color:rgb(179, 96, 60)
+        }
+        p{
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+        .doctor-info img {
+            margin-right: 20px;
+        }
+
+        .doctor-details {
+            flex: 1;
+        }
+    </style>
+</head>
+<body>
+    <form action="book.html">
+        <center>
+            <img src="images/bloomm.jpeg" width="300"; style="border-radius: 1px">
+            <h1 style="color:rgb(66, 60, 179)">Specialized Doctors</h1>
+            <hr style="height:2px;border-width:0;color:rgb(128, 128, 128);background-color:rgb(128, 128, 128)">
+            <header>
+                <a href="home.html">Home</a>
+                <a href="about.html">About us</a>
+                <a href="payments.html">Payment</a>
+                <a href="contact.html">Contact us</a>
+                <a href="doctors.html">Doctors</a>
+                <a href="patient-records.html">Patient Records</a>
+                <hr style="height:2px;border-width:0;color:rgb(128, 128, 128);background-color:rgb(128, 128, 128)">
+            </header>
+
+        </center>
+
+        
+ 
+              
+        <h2 style="color:rgb(179, 60, 106)">"People pay the doctor for his trouble; for his kindness they'll always remain in his debt."</h2>
+        
+        <input type="text" id="searchInput" size="25" onkeyup="searchDoctors()" placeholder="Search by doctor specialization">
+        <div id="doctorsContainer">
+        <br>
+        <br>
+        <div class="doctor-info">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRJsbgZqZrx-95ZyvsKYEH7noyr7zeW1yZWkQ&usqp=CAU">
+            <div class="doctor-details">
+                <p>Name: Satyendra Nath Dutta</p>
+                <p>Degree: MBBS, MD(Gen. Med.), DM(Cardio.)</p>
+                <p>Specialization: Cardiologist</p>
+            </div>
+            <button type="submit" class="button">Book Appointment</button>
+            
+        </div>
+        <br>
+        <hr>
+
+        <div class="doctor-info">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTI-suF-HNAYPoZM6k-sO69b531jmN0-GiFOQ&usqp=CAU">
+            <div class="doctor-details">
+                <p>Name: Dr Rupesh Kumar</p>
+                <p>Degree: MBBS, DO, DNB</p>
+                <p>Specialization: Nephrologist</p>
+            </div>
+            <button type="submit" class="button">Book Appointment</button>
+        </div>
+        <br>
+        <hr>
+        <div class="doctor-info">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTiuGQ13zty30auXqonhkby9rpRBUsC6NjuJw&usqp=CAU">
+            <div class="doctor-details">
+                <p>Name: Dr Shalini Prakah</p>
+                <p>Degree: MBBS, DGO, MRCOG (UK)</p>
+                <p>Specialization: Gynecologist</p>
+            </div>
+            <button type="submit" class="button">Book Appointment</button>
+        </div>
+        <br>
+        <hr>
+        <div class="doctor-info">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSzIVtEl7oJQE3CS9_sdY0aqDMBGgku8oG9WA&usqp=CAU">
+            <div class="doctor-details">
+                <p>Name: Dr Vikram Adithya</p>
+                <p>Degree: MD, DM (Neuro)</p>
+                <p>Specialization: Neurologist</p>
+            </div>
+            <button type="submit" class="button">Book Appointment</button>
+        </div>
+        <br>
+        <hr>
+        <div class="doctor-info">
+            <img src="https://www.apollocradle.com/wp-content/uploads/2020/07/Dr.-Sudha-Madhuri.jpg.webp">
+            <div class="doctor-details">
+                <p>Name: Dr Sudha Madhuri</p>
+                <p>Degree: MBBS, DDVL</p>
+                <p>Specialization: Orthopedic Surgeon</p>
+            </div>
+            <button type="submit" class="button">Book Appointment</button>
+        </div>
+        <br>
+        <hr>
+        <div class="doctor-info">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRWT0cWeMsl0deSLPwN-MN7akGMDhGqStglIg&usqp=CAU">
+            <div class="doctor-details">
+                <p>Name: Dr Anupama s</p>
+                <p>Degree: MBBS MS(Gen Surg)</p>
+                <p>Specialization: General Surgeon</p>
+            </div>
+            <button type="submit" class="button">Book Appointment</button>
+        </div>
+        <br>
+        <hr>
+        <div class="doctor-info">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRAbcSRSn1QmPT4Nhae9TvtVqjZm3T1ntgXQg&usqp=CAU">
+            <div class="doctor-details">
+                <p>Name: Dr Siddarth Varma</p>
+                <p>Degree: MBBS MS(Gen Surg)</p>
+                <p>Specialization: General Surgeon</p>
+            </div>
+            <button type="submit" class="button">Book Appointment</button>
+        </div>
+        <br>
+        <hr>
+        <div class="doctor-info">
+            <img src="https://www.asterhospitals.in/sites/default/files/2023-02/dr-s-sathish-kumar-endocrinologist-diabetologist_0.jpg">
+            <div class="doctor-details">
+                <p>Name: Dr S Satish Kumar</p>
+                <p>Degree: MBBS,MRCP(Endocrinology and Diabetes UK)</p>
+                <p>Specialization: Endocrinology , Diabetology</p>
+            </div>
+            <button type="submit" class="button">Book Appointment</button>
+        </div>
+        <br>
+        <hr>
+        <div class="doctor-info">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRVq4Bg2roiBW0CYQX3ec5UGhlnq4FTxDVsHQ&usqp=CAU">
+            <div class="doctor-details">
+                <p>Name: Dr Ankush Chanda</p>
+                <p>Degree: MBBS, MD ( Radiation Oncologist), PDCR, CC
+                <p>Specialization: Oncologist</p>
+            </div>   
+            <button type="submit" class="button">Book Appointment</button>
+        </div>
+        <br> 
+        <hr>
+        <div class="doctor-info">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQFUo1kRqD3SLmmfV3XTNI6h5omvonXNnZA3A&usqp=CAU">
+            <div class="doctor-details">
+                <p>Name: Dr Naveen Babu</p>
+                <p>Degree: MBBS, DNB Anaesthesia</p>
+                <p>Specialization: Anesthesiologist</p>
+            </div>
+            <button type="submit" class="button">Book Appointment</button>
+        </div> 
+        </div>
+        
+        <script>
+            function searchDoctors() {
+                var input = document.getElementById('searchInput').value.toLowerCase();
+          
+                var doctors = document.querySelectorAll('.doctor-info');
+    
+                doctors.forEach(function(doctor) {
+                    var specialization = doctor.querySelector('.doctor-details p:nth-child(3)').textContent.toLowerCase();
+                    
+                    if (specialization.includes(input)) {
+                        doctor.style.display = 'flex';
+                    } else {
+                        doctor.style.display = 'none';
+                    }
+                });
+            }
+        </script>
+        
+        <br>
+        <hr>
+    </form>
+</body>
+</html>

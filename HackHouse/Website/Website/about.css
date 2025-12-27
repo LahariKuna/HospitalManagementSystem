@@ -1,0 +1,118 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    background: url() no-repeat center fixed;
+    background-size: cover;
+    background-color: #f2edd7;
+}
+
+header {
+    width: 100%;
+    background-color: black;
+    padding: 5px;
+}
+
+header a {
+    text-decoration: none;
+    color: #333;
+    margin-right: 10px;
+}
+
+header a:hover {
+    color: #000;
+}
+
+nav {
+    width: 17%; 
+    background-color: #755139;
+    box-shadow: none;
+    padding: 20px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    overflow-y: auto;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav li {
+    margin-bottom: 10px;
+}
+
+nav li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    text-decoration: none;
+}
+
+li a:hover:not(.active) {
+    background-color:#f2aa4c ;
+}
+.active {
+    background-color: royalblue;
+}
+.content {
+    width: 80%;
+    margin-left: 20%;
+    padding: 20px;
+}
+h1 {
+    color: blueviolet; 
+
+}
+h2 {
+    color: blueviolet; 
+}
+p {
+    font-size: 16px; 
+    line-height: 1.6;
+}
+img {
+    max-width: 100%; 
+    height: auto;
+    display: block;
+    margin: 0 auto; 
+    border-radius: 8px;
+}
+a {
+    text-decoration: none; 
+    color: #007bff;
+}
+a:hover {
+    text-decoration: underline;
+}
+dl {
+    margin-top: 20px; 
+}
+dt {
+    font-weight: bold; 
+    margin-top: 10px; 
+}
+dd {
+    margin-bottom: 10px; 
+}
+hr {
+    border: none;
+    border-top: 1px solid #ccc; 
+    margin: 20px auto; 
+    width: 80%; 
+}
+div {
+    width: 80%;
+    border: 10px solid #755139;
+    padding: 50px;
+    margin: 20px;
+}
+
+
+
+  
